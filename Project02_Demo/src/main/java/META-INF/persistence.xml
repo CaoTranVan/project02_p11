@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <class>com.example.Model.EnterpriseInstructorEntity</class>
+        <class>com.example.Model.EnterpriseSurrogateEntity</class>
+        <class>com.example.Model.InstructorsEntity</class>
+        <class>com.example.Model.IntemshipResponsibleTeacherEntity</class>
+        <class>com.example.Model.ScoresEntity</class>
+        <class>com.example.Model.StateEntity</class>
+        <class>com.example.Model.StudentEntity</class>
+        <class>com.example.Model.StudentEnterpriseInstructorEntity</class>
+        <class>com.example.Model.TopicEntity</class>
+        <class>com.example.Model.TopicEnterpriseSurragateEntity</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/project02_p11"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/project02_p11"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/project02_p11"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/project02_p11"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>

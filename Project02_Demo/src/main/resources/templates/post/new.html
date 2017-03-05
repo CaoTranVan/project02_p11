@@ -1,0 +1,29 @@
+<html layout:decorator="layout">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/students/create" role="form">
+        <div class="form-group">
+            <table border="1" cellpadding="2" cellspacing="2">
+                <tr>
+                    <th>User Name</th>
+                    <td><input class="form-control" type="text" name="user_name"/></td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td><input class="form-control" type="text" name="name"/></td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><input class="form-control" type="number" name="age"/></td>
+                </tr>
+                <tr>
+                    <th>Class Name</th>
+                    <td><input class="form-control" type="text" name="class_name"/></td>
+                </tr>
+            </table>
+            <!--<label for="message">Name</label>-->
+            <!--<input rows="5" class="form-control" id="message" name="name"/>-->
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>

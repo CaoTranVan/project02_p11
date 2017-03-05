@@ -1,0 +1,50 @@
+<html layout:decorator="layout">
+
+<div layout:fragment="content">
+
+    <a class="btn btn-primary" href="/students/createStudent">Add new post</a>
+
+    <table class="table table-striped" id="posts_list">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>User Name</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class Name</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-th-each="et : ${enterprise}">
+            <td class="message" data-th-text="${et.enterprise_instructor_id}"></td>
+            <td class="message" data-th-text="${et.name}"></td>
+            <td class="message" data-th-text="${et.user_name}"></td>
+            <td class="message" data-th-text="${et.email}"></td>
+            <td class="message" data-th-text="${et.password}"></td>
+            <td class="message" data-th-text="${et.phone_number}"></td>
+            <td class="message" data-th-text="${et.position}"></td>
+
+
+
+            <!--<td>-->
+                <!--<a th:href="@{'/students/{id}/delete'(id=${st.id})}" class="delete" th:attr="name=${st.name}">-->
+                        <!--<span class="fa-stack">-->
+                            <!--<i class="glyphicon glyphicon-trash"></i>-->
+                        <!--</span>-->
+                <!--</a>-->
+            <!--</td>-->
+
+            <!--<td>-->
+                <!--<a th:href="@{'/students/{id}/edit'(id=${st.id})}" class="edit" th:attr="name=${st.name}">-->
+                    <!--<span class="fa-stack">-->
+                        <!--<i class="glyphicon glyphicon-edit"></i>-->
+                    <!--</span>-->
+
+                <!--</a>-->
+            <!--</td>-->
+        </tr>
+        </tbody>
+    </table>
+</div>
+</html>
